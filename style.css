@@ -6,21 +6,23 @@
 }
 
 body {
-    padding: 0 20px;
     background: darkslategray;
+    /* width: 100%; */
 }
 
 #breed-form {
     text-align: center;
-    width: 400px;
-    margin-top: 20px;
+    /* width: 200px; */
+    margin: 20px auto;
+    padding: 0 10px;
 }
 #breed-form fieldset {
     font-family: 'Ubuntu', sans-serif;
     border-radius: 10px;
     background: slategray;
     border: 2px solid greenyellow;
-    box-shadow: 1px 3px 3px 3px;
+    box-shadow: 0px 3px 3px 3px;
+    min-width: 250px;
 }
 #breed-form legend {
     font-family: 'Walter Turncoat', cursive;
@@ -30,6 +32,9 @@ body {
     padding: 5px 20px;
     border-radius: 50px;
     margin-bottom: 10px;
+}
+#breed-form label {
+    color: white;
 }
 #number {
     border: none;
