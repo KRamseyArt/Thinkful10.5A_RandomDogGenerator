@@ -27,25 +27,3 @@ function displayResults(input){
 }
 
 $(main);
-
-// fetch('https://dog.ceo/api/breeds/image/random')
-// .then(res => res.json())
-// .then(data => console.log(data));
-
-// $('#breed-form').submit(e =>{
-//     e.preventDefault();
-
-//     const breed = e.target.breed.value;
-//     const count = e.target.count.value || 3;
-
-//     fetch(`https://dog.ceo/api/breed/${breed}/images/random/${count}`)
-//     .then(res => res.json())
-//     .then(data => displayResults(data));
-// })
-
-// function displayResults(data) {
-//     const html = data.message.map(image => `
-//     <img src="${image}"> 
-//     `)
-//     $('#results').html(html);
-// } 
