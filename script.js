@@ -9,10 +9,12 @@ function getRandomPics(){
 
         let count = e.target.number.value || 3;
 
-        fetch(`https://dog.ceo/api/breeds/image/random/${count}`)
-        .then(response => response.json())
-        .then(responseJSON => displayResults(responseJSON))
-        .catch(error => alert('something went wrong!'));
+        if (count > 0) {
+            fetch(`https://dog.ceo/api/breeds/image/random/${count}`)
+            .then(response => response.json())
+            .then(responseJSON => displayResults(responseJSON))
+            .catch(error => alert('something went wrong!'));
+        }
     })
 }
 
